@@ -1,0 +1,139 @@
+
+#chat-button{
+	color: #000080;
+	padding: 5px;
+	cursor: pointer;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+#chat-box{
+	position : fixed;
+	right : -300px;
+	top: 0px;
+	width : 300px;
+	height : 100%;
+	border-left : 1px solid #AAA;
+	
+}
+#chat-box>#chat-head{
+	height: 75px;
+	width: inherit;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 10px 0 10px 5px;
+	background-color: grey;
+	color: white;
+	z-index: 99;
+	box-shadow: 0px 4px 2px #333;
+	margin-bottom: 10px;
+}
+#chat-box>#chat-head>i{
+	float: right;
+	color: white;
+	padding:8px 15px 10px 0;
+	cursor: pointer;
+}
+#chat-box>#converse{
+	height: 85%;
+	background-color: white;
+	padding-left: 5px;
+	font-size: 115%
+}
+#chat-box>#controls{
+	margin: 0;
+	border-top: 1px solid #AAA;
+	
+	height: 8%;
+	width: 298px;
+	background-color: white;
+	padding: 10px 0 10px 0;
+}
+#chat-box>#controls>#textbox{
+	width: 83%;
+	font-size: 115%;
+	height: inherit;
+	min-height: 48px;
+	max-height: 48px;
+	border: none;
+	padding: 10px;
+
+}
+#chat-user{
+	color: green;
+	font-weight: bold;
+	font-size: 90%;
+}
+#chat-bot{
+	color: #000080;
+	font-weight: bold;
+	font-size: 90%;	
+}
+
+textarea{
+	resize:none;
+}
+#chat-box>#controls>#send{
+	background-color: #0055FF;
+	border: none;
+	height :48px;
+	width: 16%;
+	border-radius: 50%;
+}
+#chat-box>#controls>#send:focus{
+	outline: none;
+}
+.controls-elements{
+	float: left;
+}
+#send-icon{
+	color: white;
+}
+@media all and (max-height: 768px){
+	#chat-box>#converse{
+		height: 79%;
+		background-color: white;
+		padding-left: 5px;
+		font-size: 115%
+	}
+	#chat-box>#controls{
+		margin: 0;
+		border-top: 1px solid #AAA;
+		height: 21%;
+		width: 298px;
+		background-color: white;
+		padding: 10px 0 10px 0;
+	}
+}
+@media all and (max-height: 600px){
+	#chat-box>#converse{
+		height: 78%;
+		background-color: white;
+		padding-left: 5px;
+		font-size: 115%
+	}
+	#chat-box>#controls{
+		margin: 0;
+		border-top: 1px solid #AAA;
+		height: 22%;
+		width: 298px;
+		background-color: white;
+		padding: 10px 0 10px 0;
+	}
+}
+@media all and (max-height: 481px){
+	#chat-box>#converse{
+		height: 72%;
+		background-color: white;
+		padding-left: 5px;
+		font-size: 115%
+	}
+	#chat-box>#controls{
+		margin: 0;
+		border-top: 1px solid #AAA;
+		height: 28%;
+		width: 298px;
+		background-color: white;
+		padding: 10px 0 10px 0;
+	}
+}

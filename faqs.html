@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FlowDIY</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/about.css">
+	<script>
+
+		$(document).ready(function(){
+			$('.acc h3').click(function(){
+				$(this).next('.content').slideToggle();
+				$(this).parent().toggleClass('active');
+				$(this).parent().siblings().children('.content').slideUp();
+				$(this).parent().siblings().removeClass('active');
+			});
+		});
+	</script>
+	<style>
+
+	@import url('https://fonts.googleapis.com/css?family=Oswald:500,600,700|Roboto');
+
+	body {
+		margin: 0;
+		background-image: url(https://images.pexels.com/photos/1020317/pexels-photo-1020317.jpeg?cs=srgb&dl=abstract-art-background-1020317.jpg&fm=jpg);
+		background-size: cover;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	h1 {
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+		font-size: 60px;
+		margin: 50px 0 0;
+		color: #fff;
+	}
+
+	.container {
+		max-width: 60%;
+		margin: 0 auto;
+		padding: 70px 0 20px;
+		width: 100%;
+	}
+
+	.acc h3 {
+		font-size: 25px;
+		background-color: rgba(0,0,0,0.6);
+		color: #fff;
+		padding: 15px;
+		margin: 0;
+		cursor: pointer;
+		font-family: 'Oswald', sans-serif;
+		letter-spacing: 2px;
+		position: relative;
+	}
+
+	.acc h3:after {
+		content: '+';
+		position: absolute;
+		right: 20px;
+		font-size: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.acc.active h3:after {
+		content: '-';
+	}
+
+	.content {
+		background-color: #fff;
+		display: none;
+	}
+
+	.content-inner {
+		padding: 15px;
+	}
+
+	.content * {
+		margin-top: 0;
+		line-height: 1.5;
+	}
+
+	.acc {
+		border-bottom: 1px solid #fff;
+	}
+</style>
+<body>
+	<div id="header">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="index.php"><img src="brand.png" style="height:100%;display:inline-block;"></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+				<li class="active"><a href="faqs.html">FAQs</a></li>
+				<li><a href="howitworks.html">How it works</a></li>
+				<li><a href="about.html">About</a></li>
+			  </ul>
+			  <form class="navbar-form navbar-right">
+				<div class="form-group">
+				  <p class="text-primary">Already have an account?</p>
+				</div>
+				<a href="signin.php" class="btn btn-primary navbar-btn">Sign In</a>
+			  </form>
+
+			</div>
+		  </div>
+		</nav>
+	</div>
+
+	<h1>FAQ Section</h1>
+	<div class="container">
+		<div class="acc">
+			<h3>What is the difference between Flow CPA and Other Accounting and/or Bookkeeping firms?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>At Flow we are more than just accountants and bookkeepers to our customers, we are partners and as such we care deeply for their success. We believe the joy is in the journey and we are focus on making your journey to success a remarkable one. We are approachable, friendly and more importantly available to you when you need us. We are here to change the way accountants are perceived and we are doing it one customer at a time.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="acc">
+			<h3>How can you manage to work on my business remotely?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>We connect your banks and credit card accounts to Xero Accounting Software for seamless data transfer. We will also open a virtual filing cabinet for you where you can upload and store all your business receipts, bills and invoices and then we will take care of the rest. By setting you up on the cloud not only we can work remotely on your business but you can also access to your own accounting software for reporting, invoicing and payments anytime from anywhere. Who is ready to spend more time at the cottage or on vacations during the summer?</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="acc">
+			<h3>My Revenues are not super high as I am just starting out a business can you still help?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>Absolutely, while clients in the growth and scale stages can benefit most about our services, we offer more automated and solutions for start-ups and Freelancers. Visit our dedicate site at <a href="http://www.yobot.ca">www.yobot.ca</a> to learn more and Join us in helping you to succeed from the very beginning.</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="acc">
+			<h3>What does the transition from my accounting software to Xero Look like?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>No matter what system you are currently using we will work from your closing balance to do your bookkeeping going forward. If your books need to be cleaned up first, we will take care of that and migrate a fresh new set of books that will look clean, simple and Beautiful.</p>
+				</div>
+			</div>
+		</div>
+		<div class="acc">
+			<h3>Can Flow Help me with Payroll?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>Of course, we work with different app partners to integrate your payroll to Xero. We will set up the software for you and your staff and provide customize training.</p>
+				</div>
+			</div>
+		</div>
+		<div class="acc">
+			<h3>Can I join the Elite VIP Annual Retreat if I am in a different package?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>Yes, you can while the Annual retreat is included in the Elite VIP package, customers of Flow and non-customers can join the retreat for a fee. For more details contact us at <a href="mailto:info@flowcpa.ca">info@flowcpa.ca</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

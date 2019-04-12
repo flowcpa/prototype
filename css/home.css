@@ -1,0 +1,88 @@
+table {
+ border-collapse: collapse;
+ width: 100%;
+}
+
+th, td {
+ text-align: left;
+ padding: 8px;
+}
+
+th {
+ background-color: #4CAF50;
+ color: white;
+}
+.navbar {
+ min-height: 80px;
+}
+
+.navbar-brand {
+ padding: 0 15px;
+ height: 80px;
+ line-height: 80px;
+}
+
+.navbar-toggle {
+ /* (80px - button height 34px) / 2 = 23px */
+ margin-top: 23px;
+ padding: 9px 10px !important;
+}
+
+#vnav{
+ color: black;
+ background-color: #f2f2f2;
+}
+
+#vnav:hover{
+ background-color: #4CAF50;
+ color: white;
+ font-weight: bold;
+ font-size: 120%;
+
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+     /* (80px - line-height of 27px) / 2 = 26.5px */
+     padding-top: 26.5px;
+     padding-bottom: 26.5px;
+     line-height: 27px;
+   }
+
+ p{
+   margin-right: 5px;
+ }
+}
+figure figcaption {
+  margin-top: 5px;
+}
+figure{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#recent{
+  margin-top: 10px;
+}
+
+#vidmodal{
+  padding: 30px;
+}
+#clientQue{
+	width: 75%;
+}
+#submitQue{
+	width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  #clientQue{
+	   width: 100%;
+  }
+  #submitQue{
+  	width: 100%;
+  }
+  #temp{
+  	margin-bottom: 10px;
+  }
+}
